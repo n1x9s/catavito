@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cats List</title>
+    <style>
+        .cat-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .cat-item {
+            width: calc(33.33% - 10px); /* Распределение по трем колонкам с отступами */
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        .cat-image {
+            width: 200px;
+            height: 200px; /* Автоматический расчет высоты */
+        }
+    </style>
+</head>
+<body>
+    <h1>Cats List</h1>
+    <ul class="cat-list">
+        {% for cat in cats %}
+            <li class="cat-item">
+                <img class="cat-image" src="{{ cat.image.url }}" alt="{{ cat.name | safe }}">
+                <h2>{{ cat.name }}</h2>
+                <p>{{ cat.description }}</p>
+                <p>Price: {{ cat.price }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
