@@ -1,0 +1,17 @@
+.cat-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.cat-item {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.cat-image {
+    width: 200px;
+    height: 200px;
+}
