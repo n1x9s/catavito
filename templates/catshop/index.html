@@ -8,16 +8,14 @@
     <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
-    <h1>Cats List</h1>
+    <h1>Котики</h1>
     <ul class="cat-list">
         {% for cat in cats %}
             <li class="cat-item">
                 <a href="{% url 'show_cat' cat.id %}">
                     <img class="cat-image" src="{{ cat.image.url }}" alt="{{ cat.name | safe }}">
                 </a>
-                <h2>{{ cat.name }}</h2>
-                <p>{{ cat.description }}</p>
-                <p>Price: {{ cat.price }}</p>
+                <p>Цена: {{ cat.price }}</p>
             </li>
         {% endfor %}
     </ul>
