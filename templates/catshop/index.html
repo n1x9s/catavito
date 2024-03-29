@@ -1,21 +1,23 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cats List</title>
+
     <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
-    <h1 class="text_h1">Котики</h1>
+    <img src="{% static "img/logo.png" %}" alt="Logo" class="logo">
     <ul class="cat-list">
         {% for cat in cats %}
             <li class="cat-item">
                 <a href="{% url 'show_cat' cat.id %}">
                     <img class="cat-image" src="{{ cat.image.url }}" alt="{{ cat.name | safe }}">
                 </a>
-                <p>Цена: {{ cat.price }}</p>
+                <p class="cost">Цена: {{ cat.price }}</p>
             </li>
         {% endfor %}
     </ul>

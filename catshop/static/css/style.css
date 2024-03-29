@@ -3,19 +3,24 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0;
-    margin: 0;
+
     list-style: none;
+    margin-top: 150px;
 }
-.cat-item {
-    width: calc(33.33% - 10px);
-    margin-bottom: 20px;
-    box-sizing: border-box;
+
+.cost{
+    font-size: 20px;
+
 }
+
+
+
 .cat-image {
     width: 400px;
     height: 300px;
     object-fit: cover;
-
+    border-radius: 5px;
+    border: 2px solid black;
 }
 .cat-detail {
     display: flex;
@@ -52,4 +57,13 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.logo {
+    width: 100px; /* Ширина логотипа */
+    height: 100px; /* Высота логотипа */
+    position: absolute; /* Позиционируем логотип абсолютно */
+    top: 20px; /* Отступ сверху */
+    left: 20px; /* Отступ слева */
+    z-index: 1000; /* Устанавливаем z-index, чтобы логотип был поверх других элементов */
 }

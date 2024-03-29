@@ -1,13 +1,16 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ cat.name }}</title>
+
     <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
+
     <div class="cat-detail">
         <div class="cat-image-container">
             <img class="cat-image_show" src="{{ cat.image.url }}" alt="{{ cat.name | safe }}">
