@@ -8,7 +8,7 @@
     margin-top: 150px;
 }
 
-.cost{
+.cost {
     font-size: 20px;
 }
 
@@ -27,6 +27,7 @@
     border-radius: 5px;
     border: 2px solid black;
 }
+
 .cat-detail {
     display: flex;
     align-items: flex-start; /* Выравнивание элементов вверху контейнера */
@@ -60,15 +61,33 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #45a049;
-}
+
 
 .logo {
     width: 100px; /* Ширина логотипа */
     height: 100px; /* Высота логотипа */
     position: absolute; /* Позиционируем логотип абсолютно */
     top: 20px; /* Отступ сверху */
-    left: 20px; /* Отступ слева */
+    left: 930px; /* Отступ слева */
     z-index: 1000; /* Устанавливаем z-index, чтобы логотип был поверх других элементов */
+}
+
+.about-button {
+    transform: translate(40px, -900px);
+    margin-bottom: 100px;
+    display: block; /* Делаем кнопку блочным элементом */
+    margin-top: 20px; /* Добавляем отступ сверху */
+    padding: 10px 20px; /* Задаем внутренние отступы */
+    background-color: #000000; /* Цвет фона */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границы */
+    border-radius: 5px; /* Скругляем углы */
+    cursor: pointer; /* Устанавливаем указатель при наведении */
+}
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: white;
 }

@@ -1,7 +1,7 @@
 html{
     font-size:20px;
     margin:0;
-    background: #0c0207;
+    background: #ffffff;
     }
 #marco{
     width: 1325px;
@@ -16,7 +16,7 @@ html{
     border-radius: 16px;
     width: 1325px;
     height: 500px;
-    background: linear-gradient(to bottom,  #0B4C5F 0%,#04B4AE 52%,#0c0207 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #899a9a 52%, #ffffff 100%);
     position: absolute;
     z-index: -30;
     top: 0;
@@ -56,27 +56,14 @@ html{
         to { background-position: 100% 0; }
     }
 
-#luna {
-    width: 6em;
-    height: 6em;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    -moz-box-shadow: 30px 10px 0 #F7F8E0;
-    -webkit-box-shadow: 30px 10px 0 #F7F8E0;
-    box-shadow: 30px 10px 0 #F7F8E0;
-    margin-top: 1em;
-    margin-left: 50%;
-    position: absolute;
-    z-index: -19;
-    }
+
 
 #muro{
     height: 23em;
     width: 100%;
-    background: -moz-linear-gradient(top,  #416663 0%, #0c0207 19%);
-    background: -webkit-linear-gradient(top,  #416663 0%,#0c0207 19%);
-    background: linear-gradient(to bottom,  #416663 0%,#0c0207 19%);
+    background: -moz-linear-gradient(top, #98a9a8 0%, #ffffff 19%);
+    background: -webkit-linear-gradient(top, #98a9a8 0%, #ffffff 19%);
+    background: linear-gradient(to bottom, #98a9a8 0%, #ffffff 19%);
     bottom:0px;
     }
 
@@ -114,7 +101,7 @@ html{
     }
 
 p{
-    color: #05A09F;
+    color: #000000;
     margin-left: 350px;
     margin-top: 50px;
     font-size: 25px;
@@ -129,7 +116,7 @@ p{
     display: block; /* Делаем кнопку блочным элементом */
     margin-top: 20px; /* Добавляем отступ сверху */
     padding: 10px 20px; /* Задаем внутренние отступы */
-    background-color: #05A09F; /* Цвет фона */
+    background-color: #000000; /* Цвет фона */
     color: white; /* Цвет текста */
     border: none; /* Убираем границы */
     border-radius: 5px; /* Скругляем углы */
