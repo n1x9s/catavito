@@ -10,3 +10,7 @@ def index(request):
 def show_cat(request, cat_id):
     cat = get_object_or_404(Cat, pk=cat_id)
     return render(request, 'catshop/show.html', {'cat': cat})
+
+
+def about(request):
+    return render(request, 'catshop/about.html')

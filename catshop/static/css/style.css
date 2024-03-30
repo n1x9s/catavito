@@ -10,9 +10,14 @@
 
 .cost{
     font-size: 20px;
-
 }
 
+.cat-item {
+    width: calc(25% - 20px); /* Устанавливаем ширину карточки кота с учетом отступов */
+    margin-right: 20px; /* Отступ между карточками котов */
+    margin-bottom: 20px; /* Нижний отступ карточки кота */
+    box-sizing: border-box; /* Размер элемента будет учитывать padding, border и content */
+}
 
 
 .cat-image {
