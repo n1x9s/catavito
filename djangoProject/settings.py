@@ -81,7 +81,6 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
@@ -127,13 +126,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'catshop/static'),
 ]
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STRIPE_PUBLIC_KEY = 'pk_test_51P0Qkq052ZZ9AZMNLDH2h1qSYVAdbieSNa6iig5eCvztzG6bsqAy3h4pjpwLCg3SkmXRLz6QVBVdDS4R8hVoVwLv00t7qqnS7n'
+STRIPE_SECRET_KEY = 'sk_test_51P0Qkq052ZZ9AZMNsqeQGLgepKDUOWXjhnuMGIcZMlzkPUGlasfCHIwu04fNd0nWTUWbwn52wrvBNBveuMZwWraJ00MnpjyNNx'

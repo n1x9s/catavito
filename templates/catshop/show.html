@@ -19,7 +19,18 @@
             <h1>{{ cat.name }}</h1>
             <p>{{ cat.description }}</p>
             <p>Цена: {{ cat.price }}</p>
-            <button>Купить</button>
+            <form action="{% url 'buy_cat' cat.id %}" method="post">
+                {% csrf_token %}
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="{{ pk_test_51P0Qkq052ZZ9AZMNLDH2h1qSYVAdbieSNa6iig5eCvztzG6bsqAy3h4pjpwLCg3SkmXRLz6QVBVdDS4R8hVoVwLv00t7qqnS7n }}"
+                        data-name="Купить котика"
+                        data-description="Оплата за котика {{ cat.name }}"
+                        data-amount="{{ cat.price|floatformat:'d'}}"
+                        data-currency="rub"
+                        data-image="{% static 'img/logo.png' %}"
+                        data-locale="auto">
+                </script>
+            </form>
         </div>
     </div>
 </body>
