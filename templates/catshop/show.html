@@ -25,8 +25,8 @@
                         data-key="{{ STRIPE_PUBLIC_KEY }}"
                         data-name="Купить котика"
                         data-description="Оплата за котика {{ cat.name }}"
-                        data-amount="{{ cat.price|floatformat:'d' }}"  <!-- Убрали * 100 -->
-                        data-currency="rub"  <!-- Указываем валюту "rub" -->
+                        data-amount="{{ cat.price|floatformat:'d' }}"
+                        data-currency="rub"
                         data-image="{% static 'img/logo.png' %}"
                         data-locale="auto">
                 </script>
