@@ -1,93 +1,293 @@
-.cat-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0;
+@media screen and (min-width: 1920px) {
 
-    list-style: none;
-    margin-top: 150px;
+
+    .cat-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+
+        list-style: none;
+        margin-top: 9.375em;
+    }
+
+    .cost {
+        font-size: 1.25em;
+    }
+
+    .cat-item {
+        width: calc(25% - 1.25em); /* Устанавливаем ширину карточки кота с учетом отступов */
+        margin-right: 1.25em; /* Отступ между карточками котов */
+        margin-bottom: 1.25em; /* Нижний отступ карточки кота */
+        box-sizing: border-box; /* Размер элемента будет учитывать padding, border и content */
+    }
+
+
+    .cat-image {
+        width: 25em;
+        height: 18.75em;
+        object-fit: cover;
+        border-radius: 0.313em;
+        border: 0.125em solid black;
+    }
+
+    .cat-detail {
+        display: flex;
+        align-items: flex-start; /* Выравнивание элементов вверху контейнера */
+    }
+
+    .cat-image-container {
+        width: 31.25em; /* Ширина контейнера для изображения */
+        margin-right: 1.25em;
+    }
+
+    .cat-image_show {
+        width: 100%; /* Изображение будет занимать всю ширину контейнера */
+        height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    }
+
+    .cat-info {
+        flex-grow: 1; /* Заполнение оставшегося пространства в строке */
+    }
+
+    .cat-info h1 {
+        margin-top: 0; /* Убираем верхний отступ у заголовка */
+    }
+
+    button {
+        margin-top: 0.625em; /* Отступ кнопки от цены */
+        padding: 0.625em 1.25em;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 0.313em;
+        cursor: pointer;
+    }
+
+
+    .logo {
+        width: 6.25em; /* Ширина логотипа */
+        height: 6.25em; /* Высота логотипа */
+        position: absolute; /* Позиционируем логотип абсолютно */
+        top: 1.25em; /* Отступ сверху */
+        left: 58.125em; /* Отступ слева */
+        z-index: 1000; /* Устанавливаем z-index, чтобы логотип был поверх других элементов */
+    }
+
+    .about-button {
+        transform: translate(2.5em, -67em);
+        margin-bottom: 6.25em;
+        display: block; /* Делаем кнопку блочным элементом */
+        margin-top: 1.25em; /* Добавляем отступ сверху */
+        padding: 0.625em 1.25em; /* Задаем внутренние отступы */
+        background-color: #000000; /* Цвет фона */
+        color: white; /* Цвет текста */
+        border: none; /* Убираем границы */
+        border-radius: 0.313em; /* Скругляем углы */
+        cursor: pointer; /* Устанавливаем указатель при наведении */
+    }
+
+    a.text:active, /* активная/посещенная ссылка */
+    a.text:hover, /* при наведении */
+    a.text {
+        text-decoration: none;
+        color: white;
+    }
 }
 
-.cost {
-    font-size: 20px;
+@media screen and (max-width: 1600px) {
+
+
+    .cat-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
+
+        list-style: none;
+        margin-top: 9.375em;
+    }
+
+    .cost {
+        font-size: 1.25em;
+    }
+
+    .cat-item {
+        width: calc(33% - 1.25em); /* Устанавливаем ширину карточки кота с учетом отступов */
+        margin-right: 1.25em; /* Отступ между карточками котов */
+        margin-bottom: 1.25em; /* Нижний отступ карточки кота */
+        box-sizing: border-box; /* Размер элемента будет учитывать padding, border и content */
+    }
+
+
+    .cat-image {
+        width: 25em;
+        height: 18.75em;
+        object-fit: cover;
+        border-radius: 0.313em;
+        border: 0.125em solid black;
+    }
+
+    .cat-detail {
+        display: flex;
+        align-items: flex-start; /* Выравнивание элементов вверху контейнера */
+    }
+
+    .cat-image-container {
+        width: 31.25em; /* Ширина контейнера для изображения */
+        margin-right: 1.25em;
+    }
+
+    .cat-image_show {
+        width: 100%; /* Изображение будет занимать всю ширину контейнера */
+        height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    }
+
+    .cat-info {
+        flex-grow: 1; /* Заполнение оставшегося пространства в строке */
+    }
+
+    .cat-info h1 {
+        margin-top: 0; /* Убираем верхний отступ у заголовка */
+    }
+
+    button {
+        margin-top: 0.625em; /* Отступ кнопки от цены */
+        padding: 0.625em 1.25em;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 0.313em;
+        cursor: pointer;
+    }
+
+
+    .logo {
+        width: 6.25em; /* Ширина логотипа */
+        height: 6.25em; /* Высота логотипа */
+        position: absolute; /* Позиционируем логотип абсолютно */
+        top: 1.25em; /* Отступ сверху */
+        left: 43em; /* Отступ слева */
+        z-index: 1000; /* Устанавливаем z-index, чтобы логотип был поверх других элементов */
+    }
+
+    .about-button {
+        transform: translate(2.5em, -67em);
+        margin-bottom: 6.25em;
+        display: block; /* Делаем кнопку блочным элементом */
+        margin-top: 1.25em; /* Добавляем отступ сверху */
+        padding: 0.625em 1.25em; /* Задаем внутренние отступы */
+        background-color: #000000; /* Цвет фона */
+        color: white; /* Цвет текста */
+        border: none; /* Убираем границы */
+        border-radius: 0.313em; /* Скругляем углы */
+        cursor: pointer; /* Устанавливаем указатель при наведении */
+    }
+
+    a.text:active, /* активная/посещенная ссылка */
+    a.text:hover, /* при наведении */
+    a.text {
+        text-decoration: none;
+        color: white;
+    }
+
 }
 
-.cat-item {
-    width: calc(25% - 20px); /* Устанавливаем ширину карточки кота с учетом отступов */
-    margin-right: 20px; /* Отступ между карточками котов */
-    margin-bottom: 20px; /* Нижний отступ карточки кота */
-    box-sizing: border-box; /* Размер элемента будет учитывать padding, border и content */
-}
+
+@media screen and (max-width: 1000px) {
 
 
-.cat-image {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 5px;
-    border: 2px solid black;
-}
+    .cat-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0;
 
-.cat-detail {
-    display: flex;
-    align-items: flex-start; /* Выравнивание элементов вверху контейнера */
-}
+        list-style: none;
+        margin-top: 9.375em;
+    }
 
-.cat-image-container {
-    width: 500px; /* Ширина контейнера для изображения */
-    margin-right: 20px;
-}
+    .cost {
+        font-size: 1.25em;
+    }
 
-.cat-image_show {
-    width: 100%; /* Изображение будет занимать всю ширину контейнера */
-    height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
-}
-
-.cat-info {
-    flex-grow: 1; /* Заполнение оставшегося пространства в строке */
-}
-
-.cat-info h1 {
-    margin-top: 0; /* Убираем верхний отступ у заголовка */
-}
-
-button {
-    margin-top: 10px; /* Отступ кнопки от цены */
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    .cat-item {
+        width: calc(100% - 1.25em); /* Устанавливаем ширину карточки кота с учетом отступов */
+        margin-right: 1.25em; /* Отступ между карточками котов */
+        margin-bottom: 1.25em; /* Нижний отступ карточки кота */
+        box-sizing: border-box; /* Размер элемента будет учитывать padding, border и content */
+    }
 
 
+    .cat-image {
+        width: 15em;
+        height: 15em;
+        object-fit: cover;
+        border-radius: 0.313em;
+        border: 0.125em solid black;
+    }
 
-.logo {
-    width: 100px; /* Ширина логотипа */
-    height: 100px; /* Высота логотипа */
-    position: absolute; /* Позиционируем логотип абсолютно */
-    top: 20px; /* Отступ сверху */
-    left: 930px; /* Отступ слева */
-    z-index: 1000; /* Устанавливаем z-index, чтобы логотип был поверх других элементов */
-}
+    .cat-detail {
+        display: flex;
+        align-items: flex-start; /* Выравнивание элементов вверху контейнера */
+    }
 
-.about-button {
-    transform: translate(40px, -900px);
-    margin-bottom: 100px;
-    display: block; /* Делаем кнопку блочным элементом */
-    margin-top: 20px; /* Добавляем отступ сверху */
-    padding: 10px 20px; /* Задаем внутренние отступы */
-    background-color: #000000; /* Цвет фона */
-    color: white; /* Цвет текста */
-    border: none; /* Убираем границы */
-    border-radius: 5px; /* Скругляем углы */
-    cursor: pointer; /* Устанавливаем указатель при наведении */
-}
+    .cat-image-container {
+        width: 31.25em; /* Ширина контейнера для изображения */
+        margin-right: 1.25em;
+    }
 
-a.text:active, /* активная/посещенная ссылка */
-a.text:hover,  /* при наведении */
-a.text {
-  text-decoration: none;
-  color: white;
+    .cat-image_show {
+        width: 100%; /* Изображение будет занимать всю ширину контейнера */
+        height: auto; /* Автоматическая высота, чтобы сохранить пропорции */
+    }
+
+    .cat-info {
+        flex-grow: 1; /* Заполнение оставшегося пространства в строке */
+    }
+
+    .cat-info h1 {
+        margin-top: 0; /* Убираем верхний отступ у заголовка */
+    }
+
+    button {
+        margin-top: 0.625em; /* Отступ кнопки от цены */
+        padding: 0.625em 1.25em;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 0.313em;
+        cursor: pointer;
+    }
+
+
+    .logo {
+        width: 6.25em; /* Ширина логотипа */
+        height: 6.25em; /* Высота логотипа */
+        position: absolute; /* Позиционируем логотип абсолютно */
+        top: 1.25em; /* Отступ сверху */
+        left: 7em; /* Отступ слева */
+        z-index: 1000; /* Устанавливаем z-index, чтобы логотип был поверх других элементов */
+    }
+
+    .about-button {
+        transform: translate(1em, -159em);
+        margin-bottom: 6.25em;
+        display: block; /* Делаем кнопку блочным элементом */
+        margin-top: 1.25em; /* Добавляем отступ сверху */
+        padding: 0.625em 1.25em; /* Задаем внутренние отступы */
+        background-color: #000000; /* Цвет фона */
+        color: white; /* Цвет текста */
+        border: none; /* Убираем границы */
+        border-radius: 0.313em; /* Скругляем углы */
+        cursor: pointer; /* Устанавливаем указатель при наведении */
+    }
+
+    a.text:active, /* активная/посещенная ссылка */
+    a.text:hover, /* при наведении */
+    a.text {
+        text-decoration: none;
+        color: white;
+    }
+
 }
