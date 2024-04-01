@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
+<a href="{% url 'about' %}" class="text">О сайте
     <img src="{% static "img/logo.png" %}" alt="Logo" class="logo">
-    <ul class="cat-list">
-        {% for cat in cats %}
-            <li class="cat-item">
-                <a href="{% url 'show_cat' cat.id %}">
-                    <img class="cat-image" src="{{ cat.image.url }}" alt="{{ cat.name | safe }}">
-                </a>
-                <p class="cost">Цена: {{ cat.price }}</p>
-            </li>
-        {% endfor %}
-    </ul>
-<button class="about-button"><a href="{% url 'about' %}" class="text">О сайте</a></button>
+</a>
+
+<ul class="cat-list">
+    {% for cat in cats %}
+        <li class="cat-item">
+            <a href="{% url 'show_cat' cat.id %}">
+                <img class="cat-image" src="{{ cat.image.url }}" alt="{{ cat.name | safe }}">
+            </a>
+            <p class="cost">Цена: {{ cat.price }}</p>
+        </li>
+    {% endfor %}
+</ul>
 </body>
 </html>
