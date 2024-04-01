@@ -95,6 +95,11 @@
     }
 }
 
+p{
+    font-family: "Google Sans", sans-serif;
+}
+
+
 @media screen and (max-width: 1600px) {
 
 
@@ -110,6 +115,7 @@
 
     .cost {
         font-size: 1.25em;
+        font-family: "Google Sans", sans-serif;
     }
 
     .cat-item {
@@ -172,7 +178,7 @@
     }
 
     .about-button {
-        transform: translate(2.5em, -67em);
+        transform: translate(2.5em, -97em);
         margin-bottom: 6.25em;
         display: block;
         margin-top: 1.25em;
@@ -193,6 +199,9 @@
 
 }
 
+p{
+    font-family: "Google Sans", sans-serif;
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -290,4 +299,8 @@
         color: white;
     }
 
+}
+
+p{
+    font-family: "Google Sans", sans-serif;
 }
