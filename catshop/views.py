@@ -27,10 +27,10 @@ def buy_cat(request, cat_id):
         token = request.POST.get('stripeToken')
         try:
 
-            price = int(float(cat.price) * 100)
+            price = int(float(cat.price) * 1000)
             charge = stripe.Charge.create(
                 amount=price,
-                currency='rub',
+                currency='usd',
                 description=f'Оплата за котика {cat.name}',
                 source=token,
             )

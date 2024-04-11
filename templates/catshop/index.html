@@ -20,7 +20,7 @@
             <a href="{% url 'show_cat' cat.id %}">
                 <img class="cat-image" src="{{ cat.image.url }}" alt="{{ cat.name | safe }}">
             </a>
-            <p class="cost">Цена: {{ cat.price }}</p>
+            <p class="cost">Цена: {{ cat.price }} ₽</p>
         </li>
     {% endfor %}
 </ul>

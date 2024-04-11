@@ -1,12 +1,12 @@
 @media screen and (min-width: 1920px) {
 
 
+
     .cat-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         padding: 0;
-
         list-style: none;
         margin-top: 9.375em;
     }
@@ -16,6 +16,7 @@
     }
 
     .cat-item {
+        margin-left: 1.25em;
         width: calc(25% - 1.25em);
         margin-right: 1.25em;
         margin-bottom: 1.25em;
@@ -24,6 +25,7 @@
 
 
     .cat-image {
+        margin-left: 1.5em;
         width: 25em;
         height: 18.75em;
         object-fit: cover;
