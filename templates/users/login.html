@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Вход</title>
 </head>
 <body>
-    <form method="POST" novalidate>
-	{% csrf_token %}
-	<h2>Login</h2>
-	{{form.as_p}}
-	<input type="submit" value="Login" />
+<form method="POST" novalidate>
+    {% csrf_token %}
+    <h2>Вход</h2>
+    {{ form.as_p }}
+    <input type="submit" value="Войти"/>
+    <p>Нет аккаунта? <a href="{% url 'register' %}">Зарегистрироваться</a></p>
 </form>
 </body>
 </html>
