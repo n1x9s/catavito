@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="{% static "css/style.css" %}">
 </head>
 <body>
+<div class="icon-container">
+    <a href="{% url 'login' %}" class="icon-link">
+        <img src="{% static 'img/log-in.png' %}" alt="Login" class="icon">
+        
+    </a>
+    <a href="{% url 'register' %}" class="icon-link">
+        <img src="{% static 'img/add-friend.png' %}" alt="Register" class="icon">
+        
+    </a>
+</div>
+
 <a href="{% url 'about' %}" class="text">О сайте
     <img src="{% static "img/logo.png" %}" alt="Logo" class="logo">
 </a>

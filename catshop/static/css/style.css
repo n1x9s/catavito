@@ -306,3 +306,47 @@ p{
 p{
     font-family: "Google Sans", sans-serif;
 }
+.logo-container {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50px; /* Увеличенное расстояние от верхнего края эмблемы до иконок */
+    right: 50px;
+}
+
+.icon-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.icon {
+    width: 50px; /* Размер иконки */
+    height: 50px;
+}
+
+.icon-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 0; /* Начальная невидимость */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.icon-link:hover .icon-tooltip {
+    opacity: 1; /* Появление при наведении */
+}
