@@ -36,15 +36,7 @@
         </li>
     {% endfor %}
 
-    <header>
-        {% if request.user.is_authenticated %}
-            <span>Добро пожаловать, {{ request.user.username | title }}!</span>
-            <a href="{% url 'logout' %}">Выйти</a>
-        {% else %}
-            <a href="{% url 'login' %}">Войти</a>
-            <a href="{% url 'register' %}">Зрегистрироваться</a>
-        {% endif %}
-    </header>
+
     <main>
         {% if messages %}
             <div class="messages">
@@ -56,8 +48,7 @@
             </div>
         {% endif %}
 
-        {% block content %}
-        {% endblock content %}
+
     </main>
 
 </ul>
