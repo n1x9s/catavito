@@ -19,7 +19,6 @@
 git clone https://github.com/spl1ntero/catavito.git
 
 2. Перейдите в директорию проекта:
-
 cd catavito
 
 
