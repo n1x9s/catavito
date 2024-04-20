@@ -66,3 +66,39 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #0056b3;
 }
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 80px; /* Уменьшаем размер логотипа для мобильных устройств */
+    }
+
+    form {
+        padding: 10px; /* Уменьшаем внутренний отступ формы для мобильных устройств */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"] {
+        padding: 8px; /* Уменьшаем размеры полей ввода и кнопки для мобильных устройств */
+        margin-bottom: 10px; /* Уменьшаем отступы между полями ввода и кнопкой для мобильных устройств */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        width: 150px; /* Увеличиваем размер логотипа для мобильных устройств */
+    }
+
+    form {
+        padding: 30px; /* Увеличиваем внутренний отступ формы для мобильных устройств */
+        max-width: none; /* Удаляем ограничение максимальной ширины для мобильных устройств */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="submit"] {
+        padding: 15px; /* Увеличиваем размеры полей ввода и кнопки для мобильных устройств */
+        margin-bottom: 20px; /* Увеличиваем отступы между полями ввода и кнопкой для мобильных устройств */
+    }
+}
