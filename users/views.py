@@ -3,12 +3,13 @@ from django.contrib import messages
 from django.contrib.auth import login, authenticate
 from .forms import LoginForm, RegisterForm
 from django.contrib.auth import login, authenticate, logout
+from django.contrib.auth.decorators import login_required
 
 
 def sign_in(request):
     if request.method == 'GET':
         if request.user.is_authenticated:
-            return redirect('index')
+            return redirect('profile')  # Если пользователь уже аутентифицирован, перенаправляем на личный кабинет
 
         form = LoginForm()
         return render(request, 'users/login.html', {'form': form})
@@ -23,7 +24,7 @@ def sign_in(request):
             if user:
                 login(request, user)
                 messages.success(request, f'Hi {username.title()}, welcome back!')
-                return redirect('index')
+                return redirect('profile')  # После успешного входа перенаправляем на личный кабинет
 
         messages.error(request, f'Invalid username or password')
         return render(request, 'users/login.html', {'form': form})
@@ -51,3 +52,8 @@ def sign_up(request):
             return redirect('index')
         else:
             return render(request, 'users/register.html', {'form': form})
+
+
+@login_required
+def profile(request):
+    return render(request, 'users/profile.html')
