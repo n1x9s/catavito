@@ -8,7 +8,7 @@ from django.contrib.auth import login, authenticate, logout
 def sign_in(request):
     if request.method == 'GET':
         if request.user.is_authenticated:
-            return redirect('posts')
+            return redirect('index')
 
         form = LoginForm()
         return render(request, 'users/login.html', {'form': form})
