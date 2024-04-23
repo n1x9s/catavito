@@ -3,11 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный кабинет</title>
+    <title>User Profile</title>
+    <!-- Подключение иконочного шрифта Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Стили для улучшения внешнего вида */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .profile-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Остальные стили */
+        /* ... */
+    </style>
 </head>
 <body>
-    <h1>Личный кабинет</h1>
-    <p>Привет, {{ user.username }}!</p>
-    <!-- Здесь можно добавить дополнительные элементы для отображения информации о пользователе -->
+<div class="profile-container">
+    <!-- Заголовок профиля с кнопкой редактирования -->
+    <div class="profile-header">
+        <h1>User Profile</h1>
+        <button class="profile-edit-button"><i class="fas fa-edit"></i> Edit Profile</button>
+    </div>
+    <!-- Фото профиля -->
+    <div class="profile-photo">
+        <img src="https://via.placeholder.com/150" alt="Profile Photo">
+    </div>
+    <!-- Основная информация о пользователе -->
+    <div class="profile-details">
+        <p><strong>Name:</strong> John Doe</p>
+        <p><strong>Email:</strong> johndoe@example.com</p>
+        <p><strong>Location:</strong> New York, USA</p>
+        <p><strong>Member Since:</strong> January 1, 2020</p>
+    </div>
+    <!-- Кнопки действий пользователя -->
+    <div class="profile-actions">
+        <button><i class="fas fa-heart"></i> Favorites</button>
+        <button><i class="fas fa-shopping-cart"></i> Purchases</button>
+    </div>
+    <!-- Секция "Мои объявления" -->
+    <div class="my-ads">
+        <h2>Мои объявления</h2>
+        <div class="ad-list">
+            <!-- Пример одного объявления -->
+            <div class="ad-item">
+                <h3>Ad Title 1</h3>
+                <p>Description of Ad 1</p>
+                <img src="https://via.placeholder.com/150" alt="Ad Image">
+            </div>
+            <!-- Другие объявления могут быть добавлены аналогично -->
+        </div>
+    </div>
+</div>
 </body>
 </html>
+
