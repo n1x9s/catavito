@@ -1,326 +1,99 @@
-@media screen and (min-width: 1920px) {
-
-
-
-    .cat-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0;
-        list-style: none;
-        margin-top: 9.375em;
-    }
-
-    .cost {
-        font-size: 1.25em;
-    }
-
-    .cat-item {
-        margin-left: 1.25em;
-        width: calc(25% - 1.25em);
-        margin-right: 1.25em;
-        margin-bottom: 1.25em;
-        box-sizing: border-box;
-    }
-
-
-    .cat-image {
-        margin-left: 1.5em;
-        width: 25em;
-        height: 18.75em;
-        object-fit: cover;
-        border-radius: 0.313em;
-        border: 0.125em solid black;
-    }
-
-    .cat-detail {
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .cat-image-container {
-        width: 31.25em;
-        margin-right: 1.25em;
-    }
-
-    .cat-image_show {
-        width: 100%;
-        height: auto;
-    }
-
-    .cat-info {
-        flex-grow: 1;
-    }
-
-    .cat-info h1 {
-        margin-top: 0;
-    }
-
-    button {
-        margin-top: 0.625em;
-        padding: 0.625em 1.25em;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 0.313em;
-        cursor: pointer;
-    }
-
-
-    .logo {
-        width: 6.25em;
-        height: 6.25em;
-        position: absolute;
-        top: 1.25em;
-        left: 58.125em;
-        z-index: 1000;
-    }
-
-    .about-button {
-        transform: translate(2.5em, -67em);
-        margin-bottom: 6.25em;
-        display: block;
-        margin-top: 1.25em;
-        padding: 0.625em 1.25em;
-        background-color: #000000;
-        color: white;
-        border: none;
-        border-radius: 0.313em;
-        cursor: pointer;
-    }
-
-    a.text:active,
-    a.text:hover,
-    a.text {
-        text-decoration: none;
-        color: white;
-    }
-}
-
-p{
-    font-family: "Google Sans", sans-serif;
-}
-
-
-@media screen and (max-width: 1600px) {
-
-
-    .cat-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0;
-
-        list-style: none;
-        margin-top: 9.375em;
-    }
-
-    .cost {
-        font-size: 1.25em;
-        font-family: "Google Sans", sans-serif;
-    }
-
-    .cat-item {
-        width: calc(33% - 1.25em);
-        margin-right: 1.25em;
-        margin-bottom: 1.25em;
-        box-sizing: border-box;
-    }
-
-
-    .cat-image {
-        width: 25em;
-        height: 18.75em;
-        object-fit: cover;
-        border-radius: 0.313em;
-        border: 0.125em solid black;
-    }
-
-    .cat-detail {
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .cat-image-container {
-        width: 31.25em;
-        margin-right: 1.25em;
-    }
-
-    .cat-image_show {
-        width: 100%;
-        height: auto;
-    }
-
-    .cat-info {
-        flex-grow: 1;
-    }
-
-    .cat-info h1 {
-        margin-top: 0;
-    }
-
-    button {
-        margin-top: 0.625em;
-        padding: 0.625em 1.25em;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 0.313em;
-        cursor: pointer;
-    }
-
-
-    .logo {
-        width: 6.25em;
-        height: 6.25em;
-        position: absolute;
-        top: 1.25em;
-        left: 43em;
-        z-index: 1000;
-    }
-
-    .about-button {
-        transform: translate(2.5em, -97em);
-        margin-bottom: 6.25em;
-        display: block;
-        margin-top: 1.25em;
-        padding: 0.625em 1.25em;
-        background-color: #000000;
-        color: white;
-        border: none;
-        border-radius: 0.313em;
-        cursor: pointer;
-    }
-
-    a.text:active,
-    a.text:hover,
-    a.text {
-        text-decoration: none;
-        color: white;
-    }
-
-}
-
-p{
-    font-family: "Google Sans", sans-serif;
-}
-
-@media screen and (max-width: 1000px) {
-
-
-    .cat-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 0;
-
-        list-style: none;
-        margin-top: 9.375em;
-    }
-
-    .cost {
-        font-size: 1.25em;
-    }
-
-    .cat-item {
-        width: calc(100% - 1.25em);
-        margin-right: 1.25em;
-        margin-bottom: 1.25em;
-        box-sizing: border-box;
-    }
-
-
-    .cat-image {
-        width: 15em;
-        height: 15em;
-        object-fit: cover;
-        border-radius: 0.313em;
-        border: 0.125em solid black;
-    }
-
-    .cat-detail {
-        display: flex;
-        align-items: flex-start;
-    }
-
-    .cat-image-container {
-        width: 31.25em;
-        margin-right: 1.25em;
-    }
-
-    .cat-image_show {
-        width: 100%;
-        height: auto;
-    }
-
-    .cat-info {
-        flex-grow: 1;
-    }
-
-    .cat-info h1 {
-        margin-top: 0;
-    }
-
-    button {
-        margin-top: 0.625em;
-        padding: 0.625em 1.25em;
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        border-radius: 0.313em;
-        cursor: pointer;
-    }
-
-
-    .logo {
-        width: 6.25em;
-        height: 6.25em;
-        position: absolute;
-        top: 1.25em;
-        left: 7em;
-        z-index: 1000;
-    }
-
-    .about-button {
-        transform: translate(1em, -159em);
-        margin-bottom: 6.25em;
-        display: block;
-        margin-top: 1.25em;
-        padding: 0.625em 1.25em;
-        background-color: #000000;
-        color: white;
-        border: none;
-        border-radius: 0.313em;
-        cursor: pointer;
-    }
-
-    a.text:active,
-    a.text:hover,
-    a.text {
-        text-decoration: none;
-        color: white;
-    }
-
-}
-
-p{
-    font-family: "Google Sans", sans-serif;
-}
-.logo-container {
-    position: relative;
+.cat-list {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    margin-top: 9.375em;
+}
+
+.cost {
+    font-size: 1.25em;
+}
+
+.cat-item {
+    margin-left: 1.25em;
+    width: calc(25% - 1.25em);
+    margin-right: 1.25em;
+    margin-bottom: 1.25em;
+    box-sizing: border-box;
+}
+
+.cat-image {
+    width: 100%; /* Устанавливаем ширину изображения на 100%, чтобы оно занимало всю доступную ширину */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    max-width: 100%; /* Устанавливаем максимальную ширину на 100% для обеспечения масштабируемости */
+    max-height: 100%;
+}
+
+.cat-detail {
+    display: flex;
+    align-items: flex-start;
+}
+
+.cat-image-container {
+    width: 100%; /* Изменено для адаптивности */
+    margin-right: 1.25em;
+}
+
+.cat-info {
+    flex-grow: 1;
+}
+
+.cat-info h1 {
+    margin-top: 0;
+}
+
+button {
+    margin-top: 0.625em;
+    padding: 0.625em 1.25em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.313em;
+    cursor: pointer;
 }
 
 .logo {
-    width: 6.25em;
-    height: 6.25em;
+    width: 20%; /* Изменено для адаптивности */
+    max-width: 6.25em; /* Добавлено для контроля максимальной ширины */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    position: absolute;
+    top: 1.25em; /* Позиционируем логотип по вертикали вверху */
+    left: 50%; /* Позиционируем логотип по горизонтали по центру */
+    transform: translateX(-50%); /* Сдвигаем логотип влево на половину его ширины */
+    z-index: 1000;
+}
+
+.about-button {
+    transform: translate(2.5em, -67em);
+    margin-bottom: 6.25em;
+    display: block;
+    margin-top: 1.25em;
+    padding: 0.625em 1.25em;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 0.313em;
+    cursor: pointer;
+}
+
+a.text:active,
+a.text:hover,
+a.text {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-container {
+    position: relative;
 }
 
 .icon-container {
-    display: flex;
-    gap: 10px; /* Расстояние между иконками */
-    position: relative;
+    position: fixed; /* Фиксируем контейнер иконок */
+    top: 1.25em; /* Размещаем контейнер иконок вверху страницы */
+    right: 1.25em; /* Позиционируем контейнер иконок по горизонтали справа */
+    z-index: 1000;
 }
 
 .icon-link {
@@ -329,8 +102,10 @@ p{
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 2.8125em; /* Устанавливаем ширину иконки на 20% больше от размера после предыдущего уменьшения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    max-width: 45%; /* Устанавливаем максимальную ширину в 45% (20% больше, чем предыдущее значение) */
+    max-height: 2.8125em;
 }
 
 .icon-tooltip {
@@ -349,4 +124,31 @@ p{
 .icon-link:hover .icon-tooltip {
     opacity: 1;
 }
+
+p {
+    font-family: "Google Sans", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .cat-item {
+        width: calc(50% - 1.25em);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cat-item {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .logo {
+        width: 30%; /* Изменено для адаптивности */
+        max-width: 6.25em; /* Добавлено для контроля максимальной ширины */
+    }
+}
+
+
+
+
 
