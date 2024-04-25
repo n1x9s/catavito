@@ -16,11 +16,12 @@
 
 .cat-info {
     text-align: center; /* Center the text */
-    margin-top: 20px; /* Add margin to push it below the image */
+    margin-top: -270px; /* Add margin to push it below the image */
+    margin-right: 180px;
 }
 
-.cat-image_show {
-    width: 50%; /* Set image width to 50% */
+.cat-image-show {
+    width: 30%; /* Set image width to 30% */
     height: auto; /* Maintain aspect ratio */
     max-width: 100%; /* Ensure image doesn't exceed its container */
 }
