@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "catshop.apps.CatshopConfig"
+    "catshop.apps.CatshopConfig",
+    "users.apps.UsersConfig",
 
 ]
 
@@ -86,7 +87,7 @@ DATABASES = {
         "ENGINE": "django.db.backends.mysql",
         "NAME": "my_database1",
         "USER": "root",
-        "PASSWORD": "15931",
+        "PASSWORD": "123w123r",
         "HOST": "localhost",
         "PORT": "3306",
     }

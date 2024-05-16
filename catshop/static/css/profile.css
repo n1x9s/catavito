@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    max-width: 50%; /* уменьшаем максимальную ширину логотипа до 80% относительно размеров родительского контейнера */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
