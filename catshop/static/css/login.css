@@ -2,7 +2,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: rgba(255, 255, 255, 0);
     margin: 0;
     padding: 0;
 }
@@ -12,6 +12,16 @@ body {
     margin: 20px auto; /* Центрирование логотипа и добавление отступа сверху и снизу */
     width: 100px; /* Задаем ширину логотипа */
     height: auto; /* Подстраиваем высоту автоматически */
+}
+a.text:active,
+a.text:hover,
+a.text {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0);
+}
+
+.logo-container {
+    position: relative;
 }
 
 form {

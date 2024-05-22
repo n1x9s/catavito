@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Регистрация</title>
-    <img src="{% static "img/logo.png" %}" alt="Logo" class="logo">
+    <a href="{% url 'index' %}" class="text">На главную
+        <img src="{% static "img/logo.png" %}" alt="Logo" class="logo">
+    </a>
     <link rel="stylesheet" type="text/css" href="/css/login.css">
     <link rel="stylesheet" type="text/css" href="{% static 'css/register.css' %}">
 </head>

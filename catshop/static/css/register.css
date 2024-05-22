@@ -13,6 +13,16 @@ body {
     width: 100px; /* Задаем ширину логотипа */
     height: auto; /* Подстраиваем высоту автоматически */
 }
+a.text:active,
+a.text:hover,
+a.text {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0);
+}
+
+.logo-container {
+    position: relative;
+}
 
 form {
     max-width: 500px;
@@ -34,7 +44,7 @@ p {
 }
 
 a {
-    color: #007bff;
+
     text-decoration: none;
 }
 

@@ -5,7 +5,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Вход</title>
-    <img src="{% static "img/logo.png" %}" alt="Logo" class="logo">
+    <a href="{% url 'index' %}" class="text">На главную
+        <img src="{% static "img/logo.png" %}" alt="Logo" class="logo">
+    </a>
     <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
    
 </head>
