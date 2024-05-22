@@ -89,39 +89,40 @@ a.text {
 }
 
 .icon-container {
-    position: fixed; /* Фиксируем контейнер иконок */
+    display: flex;
+    flex-direction: column;
+    position: absolute; /* Фиксируем контейнер иконок */
     top: 1.25em; /* Размещаем контейнер иконок вверху страницы */
     right: 1.25em; /* Позиционируем контейнер иконок по горизонтали справа */
-    z-index: 1000;
+    z-index: 1000; /* Высокий z-index, чтобы иконки были сверху */
 }
 
 .icon-link {
-    position: relative;
+    display: block;
     text-decoration: none;
+    margin-bottom: 1em; /* Отступ между иконками */
 }
 
 .icon {
-    width: 2.8125em; /* Устанавливаем ширину иконки на 20% больше от размера после предыдущего уменьшения */
+    width: 2.8125em; /* Устанавливаем ширину иконки */
     height: auto; /* Автоматическая высота для сохранения пропорций */
-    max-width: 45%; /* Устанавливаем максимальную ширину в 45% (20% больше, чем предыдущее значение) */
-    max-height: 2.8125em;
 }
 
 .icon-tooltip {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 5px;
-    border-radius: 3px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    position: absolute; /* Абсолютное позиционирование внутри фиксированного элемента */
+    bottom: 100%; /* Расположена над иконкой */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Для точного центрирования */
+    background-color: rgba(0, 0, 0, 0.8); /* Фон подсказки */
+    color: #fff; /* Цвет текста подсказки */
+    padding: 5px; /* Внутренние отступы */
+    border-radius: 3px; /* Скругленные углы */
+    opacity: 0; /* Невидима по умолчанию */
+    transition: opacity 0.3s ease-in-out; /* Плавное появление */
 }
 
 .icon-link:hover .icon-tooltip {
-    opacity: 1;
+    opacity: 1; /* Подсказка видима при наведении */
 }
 
 p {
