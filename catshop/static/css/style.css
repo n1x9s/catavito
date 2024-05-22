@@ -88,7 +88,14 @@ a.text {
     position: relative;
 }
 
-
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute; /* Фиксируем контейнер иконок */
+    top: 1.25em; /* Размещаем контейнер иконок вверху страницы */
+    right: 1.25em; /* Позиционируем контейнер иконок по горизонтали справа */
+    z-index: 1000; /* Высокий z-index, чтобы иконки были сверху */
+}
 
 .icon-link {
     display: block;
