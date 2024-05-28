@@ -1,37 +1,69 @@
-.cat-wrapper {
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-    padding: 20px;
-}
-
 .cat-detail {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .cat-image-container {
-    margin-right: 20px; /* Add space to the right of the image */
+    position: relative;
+    flex: 1; /* Занимает всю доступную ширину */
+    height: 600px;
+    overflow: hidden;
+    width: 50%; /* Занимает левую половину сайта */
 }
 
 .cat-info {
-    text-align: center; /* Center the text */
-    margin-top: -270px; /* Add margin to push it below the image */
-    margin-right: 180px;
+    flex: 1;
 }
 
 .cat-image-show {
-    width: 30%; /* Set image width to 30% */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 100%; /* Ensure image doesn't exceed its container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Responsive styles */
-@media only screen and (min-width: 1920px) {
+.cat-description {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .cat-detail {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cat-image-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
     .cat-info {
-        max-width: 50%; /* Limit the width of .cat-info block */
+        text-align: center;
     }
 }
+
+@media only screen and (min-width: 1200px) {
+    .cat-detail {
+        flex-direction: row;
+    }
+
+    .cat-image-container {
+        margin-right: 40px;
+    }
+
+    .cat-info {
+        margin-left: 40px;
+    }
+}
+
+
+
+
+
+
 
 
 
