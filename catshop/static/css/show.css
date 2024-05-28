@@ -7,16 +7,11 @@
     margin: 0 auto;
 }
 
-.cat-image-container {
-    position: relative;
-    flex: 1; /* Занимает всю доступную ширину */
-    height: 600px;
-    overflow: hidden;
-    width: 50%; /* Занимает левую половину сайта */
-}
-
-.cat-info {
+.cat-image-container,
+.cat-info-container {
     flex: 1;
+    height: 800px;
+    overflow: hidden;
 }
 
 .cat-image-show {
@@ -35,8 +30,10 @@
         align-items: center;
     }
 
-    .cat-image-container {
-        margin-right: 0;
+    .cat-image-container,
+    .cat-info-container {
+        width: 100%;
+        height: auto;
         margin-bottom: 20px;
     }
 
@@ -50,14 +47,17 @@
         flex-direction: row;
     }
 
-    .cat-image-container {
-        margin-right: 40px;
+    .cat-image-container,
+    .cat-info-container {
+        width: 50%;
     }
 
     .cat-info {
-        margin-left: 40px;
+        margin-left: 20px;
     }
 }
+
+
 
 
 
