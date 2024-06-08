@@ -15,18 +15,28 @@
 
 ## Установка
 
-1. Склонируйте репозиторий:
-git clone https://github.com/spl1ntero/catavito.git
+1. **Клонирование репозитория:**
+   Склонируйте репозиторий командой `git clone`:
+   ```bash
+   git clone https://github.com/n1x9s/catavito.git
+2. **Переход в директорию с проектом:**
+    Перейдите в директорию с загруженным проектом:
+    ```bash
+    cd catavito
 
-2. Перейдите в директорию проекта:
-cd catavito
+3. **Установка зависимостей:**
+    Установите необходимые зависимости:
+    ```bash
+    pip install -r requirements.txt
 
-
-3. Выполните в терминале 'pip install -r requirements.txt'
+4. **Запуск приложения:**
+   Запустите приложение:
+   ```bash
+   flask run
 
 ## Контрибьюторы
 
-- [Backend Developer](https://github.com/spl1ntero)
+- [Backend Developer](https://github.com/n1x9s)
 - [Frontend Developer](https://github.com/faergun)
 
 ## Лицензия
