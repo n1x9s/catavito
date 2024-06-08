@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Форма на приют {{ cat.name }}{% endblock %}
+{% block content %}
+<h2>Приютить {{ cat.name }}</h2>
+<form method="POST" action="{{ url_for('adopt', cat_id=cat.id) }}">
+    <div class="form-group">
+        <label for="name">Ваше имя</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Ваш email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить запрос</button>
+</form>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Cats List{% endblock %}
+{% block content %}
+<div class="row">
+    {% for cat in cats %}
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ cat.image }}" class="card-img-top" alt="{{ cat.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ cat.name }}</h5>
+                    <a href="{{ url_for('show_cat', cat_id=cat.id) }}" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

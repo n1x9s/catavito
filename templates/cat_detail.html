@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ cat.name }}</title>
+    <style>
+        .btn-success {
+            background-color: #007bff;
+            color: white; /* Цвет текста на кнопке */
+            border: none; /* Убираем границу */
+            padding: 10px 20px; /* Отступы внутри кнопки */
+            text-decoration: none; /* Убираем подчеркивание для ссылки */
+            border-radius: 5px;
+        }
+
+        /* При наведении курсора на кнопку меняем цвет фона */
+        .btn-success:hover {
+            background-color: #0069d9;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        .text {
+            flex: 1.3;
+            padding: 20px;
+            font-size: 18px;
+        }
+
+        .text h1 {
+            font-size: 70px;
+        }
+
+        .text p {
+            font-size: 30px;
+        }
+
+        .image img {
+            width: 900px;
+            height: 1228px;
+        }
+
+
+        .image {
+            flex: 0.7;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .back {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            font-size: 24px;
+        }
+
+
+    </style>
+</head>
+<body>
+<a href="{{ url_for('index') }}" class="back">&larr;</a>
+<div class="container">
+    <div class="text">
+        <h1>{{ cat.name }}</h1>
+        <p>{{ cat.description }}</p>
+        <a href="{{ url_for('adopt', cat_id=cat.id) }}" class="btn btn-success">Приютить</a>
+    </div>
+    <div class="image">
+        <img src="{{ url_for('static', filename=cat.image.split('static/')[1]) }}" class="img-fluid full-height"
+             alt="{{ cat.name }}">
+    </div>
+</div>
+</body>
+</html>
